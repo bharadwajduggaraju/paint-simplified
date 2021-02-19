@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Paint Simplified | Paint</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/7b9611f913.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--JS -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!--Modal for Saving -->
+    <div class="bg-modal">
+      <div class="modal-contents">
+        <div class="close">+</div>
+        <form>
+          <h1>
+            Image Name
+          </h1>
+          <input type="text" class="saveinput"/>
+        </form>
+      </div>
+    </div>
+    <main>
+      <section class="draw">
+        <!--Our Drawing Board-->
+        <canvas class="canvas" id="canvas"> </canvas>
+        <section class="tools">
+          <div class="utils">
+            <button class="minus">
+              -
+            </button>
+
+            <button class="width">
+              5
+            </button>
+
+            <button class="plus">
+              +
+            </button>
+            <input type="color" value="green" />
+          </div>
+          <div class="actions">
+            <button class="save">
+              <i class="fas fa-save"></i>
+            </button>
+            <button class="clear">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
